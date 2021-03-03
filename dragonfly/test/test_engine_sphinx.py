@@ -70,8 +70,8 @@ class SphinxEngineCase(unittest.TestCase):
     Base TestCase class for Sphinx engine tests
     """
 
-    log = logging.getLogger("engine")
-    compile_log = logging.getLogger("engine.compiler")
+    log = logging.getLogger("dragonfly.engine")
+    compile_log = logging.getLogger("dragonfly.engine.compiler")
 
     def setUp(self):
         self.engine = get_engine("sphinx")

@@ -37,7 +37,7 @@ except ImportError:
 
 class RecObsManagerBase(object):
 
-    _log = logging.getLogger("engine.recobs")
+    _log = logging.getLogger("dragonfly.engine.recobs")
 
     def __init__(self, engine):
         self._engine = engine

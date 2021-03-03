@@ -46,9 +46,9 @@ class ActionBase(object):
 
     """
 
-    _log_init = logging.getLogger("action.init")
-    _log_exec = logging.getLogger("action.exec")
-    _log = logging.getLogger("action")
+    _log_init = logging.getLogger("dragonfly.action.init")
+    _log_exec = logging.getLogger("dragonfly.action.exec")
+    _log = logging.getLogger("dragonfly.action")
 
     #-----------------------------------------------------------------------
     # Initialization and aggregation methods.

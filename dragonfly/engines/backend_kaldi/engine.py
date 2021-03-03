@@ -98,7 +98,7 @@ class KaldiEngine(EngineBase, DelegateTimerManagerInterface):
 
         # Hack to avoid bug processing keyboard actions on Windows
         if os.name == 'nt':
-            action_exec_logger = logging.getLogger('action.exec')
+            action_exec_logger = logging.getLogger('dragonfly.action.exec')
             if action_exec_logger.getEffectiveLevel() > logging.DEBUG:
                 self._log.warning("%s: Enabling logging of actions execution to avoid bug processing keyboard actions on Windows", self)
                 action_exec_logger.setLevel(logging.DEBUG)

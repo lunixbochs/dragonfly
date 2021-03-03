@@ -31,7 +31,7 @@ Dragonfly's logger levels can be adjusted much like Python logger levels:
 ..  code::
 
     import logging
-    logging.getLogger("engine").setLevel(logging.DEBUG)
+    logging.getLogger("dragonfly.engine").setLevel(logging.DEBUG)
 
 The one caveat is that this must be done *after* the :meth:`setup_log`
 function is called, otherwise the levels you set will be overridden.
@@ -68,37 +68,37 @@ _warning   = logging.WARNING
 _error     = logging.ERROR
 _critical  = logging.CRITICAL
 default_levels = {
-                  "":                     (_warning, _warning),
-                  "engine":               (_info, _info),
-                  "engine.compiler":      (_warning, _info),
-                  "engine.timer":         (_warning, _info),
-                  "grammar":              (_warning, _critical),
-                  "grammar.load":         (_warning, _info),
-                  "grammar.begin":        (_info, _info),
-                  "grammar.results":      (_warning, _warning),
-                  "grammar.decode":       (_warning, _info),
-                  "grammar.eval":         (_warning, _warning),
-                  "grammar.process":      (_warning, _warning),
-                  "lang":                 (_warning, _info),
-                  "compound.parse":       (_warning, _info),
-                  "dictation.formatter":  (_warning, _warning),
-                  "action":               (_warning, _warning),
-                  "action.init":          (_warning, _warning),
-                  "action.exec":          (_warning, _warning),
-                  "context":              (_warning, _info),
-                  "context.match":        (_warning, _info),
-                  "rpc.server":           (_warning, _info),
-                  "rpc.methods":          (_warning, _info),
-                  "werkzeug":             (_warning, _warning),
-                  "jsonrpc.manager":      (_critical, _critical),
-                  "rule":                 (_warning, _info),
-                  "config":               (_warning, _info),
-                  "module":               (_info, _info),
-                  "monitor.init":         (_warning, _info),
-                  "dfly.test":            (_debug, _debug),
-                  "accessibility":        (_info, _info),
-                  "keyboard":             (_warning, _warning),
-                  "typeables":            (_warning, _warning),
+                  "":                               (_warning, _warning),
+                  "dragonfly.engine":               (_info, _info),
+                  "dragonfly.engine.compiler":      (_warning, _info),
+                  "dragonfly.engine.timer":         (_warning, _info),
+                  "dragonfly.grammar":              (_warning, _critical),
+                  "dragonfly.grammar.load":         (_warning, _info),
+                  "dragonfly.grammar.begin":        (_info, _info),
+                  "dragonfly.grammar.results":      (_warning, _warning),
+                  "dragonfly.grammar.decode":       (_warning, _info),
+                  "dragonfly.grammar.eval":         (_warning, _warning),
+                  "dragonfly.grammar.process":      (_warning, _warning),
+                  "dragonfly.lang":                 (_warning, _info),
+                  "dragonfly.compound.parse":       (_warning, _info),
+                  "dragonfly.dictation.formatter":  (_warning, _warning),
+                  "dragonfly.action":               (_warning, _warning),
+                  "dragonfly.action.init":          (_warning, _warning),
+                  "dragonfly.action.exec":          (_warning, _warning),
+                  "dragonfly.context":              (_warning, _info),
+                  "dragonfly.context.match":        (_warning, _info),
+                  "dragonfly.rpc.server":           (_warning, _info),
+                  "dragonfly.rpc.methods":          (_warning, _info),
+                  "dragonfly.rule":                 (_warning, _info),
+                  "dragonfly.config":               (_warning, _info),
+                  "dragonfly.module":               (_info, _info),
+                  "dragonfly.monitor.init":         (_warning, _info),
+                  "dragonfly.test":                 (_debug, _debug),
+                  "dragonfly.accessibility":        (_info, _info),
+                  "dragonfly.keyboard":             (_warning, _warning),
+                  "dragonfly.typeables":            (_warning, _warning),
+                  "werkzeug":                       (_warning, _warning),
+                  "jsonrpc.manager":                (_critical, _critical),
                  }
 
 

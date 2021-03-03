@@ -19,7 +19,7 @@ class Controller(object):
     """Provides access to the AT-SPI subsystem. All accesses to this subsystem
     must be run in a single thread, which is managed here."""
 
-    _log = logging.getLogger("accessibility")
+    _log = logging.getLogger("dragonfly.accessibility")
 
     class Capture(object):
         def __init__(self, closure):

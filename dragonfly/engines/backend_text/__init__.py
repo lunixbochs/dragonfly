@@ -25,7 +25,7 @@ SR back-end package for the text input engine
 """
 
 import logging
-_log = logging.getLogger("engine.text")
+_log = logging.getLogger("dragonfly.engine.text")
 
 
 # Module level singleton instance of this engine implementation.

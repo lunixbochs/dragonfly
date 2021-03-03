@@ -28,7 +28,7 @@ from dragonfly.log import setup_log
 from dragonfly import get_engine
 
 # Setup logging.
-_log = logging.getLogger("dfly.test")
+_log = logging.getLogger("dragonfly.test")
 setup_log()
 
 

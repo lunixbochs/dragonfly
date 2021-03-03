@@ -5,10 +5,10 @@ import dragonfly
 
 if False:
     logging.basicConfig(level=10)
-    logging.getLogger('grammar.decode').setLevel(20)
-    logging.getLogger('compound').setLevel(20)
+    logging.getLogger('dragonfly.grammar.decode').setLevel(20)
+    logging.getLogger('dragonfly.compound').setLevel(20)
+    logging.getLogger('dragonfly.engine').setLevel(10)
     # logging.getLogger('kaldi').setLevel(30)
-    logging.getLogger('engine').setLevel(10)
     logging.getLogger('kaldi').setLevel(10)
 else:
     # logging.basicConfig(level=20)

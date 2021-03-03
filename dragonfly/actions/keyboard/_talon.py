@@ -31,7 +31,7 @@ from talon import ctrl
 
 class Typeable(BaseTypeable):
     """ Typeable class for talon. """
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
 
     def __init__(self, code, modifiers=(), name=None, is_text=False):
         BaseTypeable.__init__(self, code, modifiers, name, is_text)
@@ -139,7 +139,7 @@ class TalonKeySymbols(object):
 class Keyboard(BaseKeyboard):
     """Static class wrapper around talon.ctrl."""
 
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
 
     @classmethod
     def send_keyboard_events(cls, events):

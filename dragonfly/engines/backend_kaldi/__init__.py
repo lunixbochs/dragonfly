@@ -26,7 +26,7 @@ SR back-end package for Kaldi
 
 import logging
 import struct
-_log = logging.getLogger("engine.kaldi")
+_log = logging.getLogger("dragonfly.engine.kaldi")
 
 
 #---------------------------------------------------------------------------

@@ -30,7 +30,7 @@ the engine class. Please see the :ref:`CMU Pocket Sphinx engine page
 """
 
 import logging
-_log = logging.getLogger("engine.sphinx")
+_log = logging.getLogger("dragonfly.engine.sphinx")
 
 
 # Module level singleton instance of this engine implementation.

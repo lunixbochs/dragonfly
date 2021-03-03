@@ -33,7 +33,7 @@ from ..test                 import infrastructure
 
 class RuleTestGrammar(Grammar):
 
-    _log = logging.getLogger("test")
+    _log = logging.getLogger("dragonfly.test")
     _NoRecognition = infrastructure.Unique("NoRecognition")
 
     #-----------------------------------------------------------------------

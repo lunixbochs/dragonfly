@@ -42,7 +42,7 @@ class RecognitionObserver(object):
     Sub-classes should override one or more of the event methods.
     """
 
-    _log = logging.getLogger("grammar")
+    _log = logging.getLogger("dragonfly.grammar")
 
     def __init__(self):
         pass

@@ -76,7 +76,7 @@ def get_location(location):
         g = geocoder.osm(location.encode('utf-8'))
         data = g.json
     except (Exception) as e:
-        log = logging.getLogger("location")
+        log = logging.getLogger("dragonfly.location")
         log.exception("Error while getting data for location '%s': %s",
                       location, e)
 

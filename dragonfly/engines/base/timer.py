@@ -49,7 +49,7 @@ class Timer(object):
     :meth:`engine.create_timer`.
     """
 
-    _log = logging.getLogger("engine.timer")
+    _log = logging.getLogger("dragonfly.engine.timer")
 
     def __init__(self, function, interval, manager, repeating=True):
         self.function = function
@@ -98,7 +98,7 @@ class Timer(object):
 class TimerManagerBase(object):
     """ Base timer manager class. """
 
-    _log = logging.getLogger("engine.timer")
+    _log = logging.getLogger("dragonfly.engine.timer")
 
     def __init__(self, interval, engine):
         self.interval = interval

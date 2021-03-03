@@ -37,7 +37,7 @@ class CompilerError(Exception):
 
 class CompilerBase(object):
 
-    _log = logging.getLogger("engine.compiler")
+    _log = logging.getLogger("dragonfly.engine.compiler")
 
     element_compilers = [
         (elements_.Sequence,    lambda s,e,*a,**k: s._compile_sequence(e,*a,**k)),

@@ -58,7 +58,7 @@ class EngineContext(object):
 class EngineBase(object):
     """ Base class for engine-specific back-ends. """
 
-    _log = logging.getLogger("engine")
+    _log = logging.getLogger("dragonfly.engine")
     _name = "base"
     _timer_manager = None
 

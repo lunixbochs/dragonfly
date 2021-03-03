@@ -35,7 +35,7 @@ import six
 
 class CommandModule(object):
 
-    _log = logging.getLogger("module")
+    _log = logging.getLogger("dragonfly.module")
 
     def __init__(self, path):
         self._path = os.path.abspath(path)
@@ -83,7 +83,7 @@ class CommandModule(object):
 
 class CommandModuleDirectory(object):
 
-    _log = logging.getLogger("directory")
+    _log = logging.getLogger("dragonfly.directory")
 
     def __init__(self, path, excludes=None, recursive=False):
         if excludes is None:

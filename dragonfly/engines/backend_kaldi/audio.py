@@ -33,7 +33,7 @@ import webrtcvad
 
 from ..base import EngineError
 
-_log = logging.getLogger("engine")
+_log = logging.getLogger("dragonfly.engine")
 
 
 class MicAudio(object):

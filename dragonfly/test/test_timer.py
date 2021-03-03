@@ -43,7 +43,7 @@ class TestTimer(unittest.TestCase):
 
     def setUp(self):
         self.log_capture = CapturingHandler()
-        logging.getLogger("engine.timer").addHandler(self.log_capture)
+        logging.getLogger("dragonfly.engine.timer").addHandler(self.log_capture)
         self.engine = get_engine()
 
     def test_timer_callback_exception(self):

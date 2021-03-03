@@ -57,7 +57,7 @@ class X11Window(BaseWindow):
 
     """
 
-    _log = logging.getLogger("window")
+    _log = logging.getLogger("dragonfly.window")
 
     #-----------------------------------------------------------------------
     # Methods and attributes for running commands.

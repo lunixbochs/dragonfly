@@ -98,8 +98,8 @@ class ElementBase(object):
 
     name = "uninitialized"
 
-    _log_decode = logging.getLogger("grammar.decode")
-    _log_eval = logging.getLogger("grammar.eval")
+    _log_decode = logging.getLogger("dragonfly.grammar.decode")
+    _log_eval = logging.getLogger("dragonfly.grammar.eval")
 
     def __init__(self, name=None, default=None):
         """

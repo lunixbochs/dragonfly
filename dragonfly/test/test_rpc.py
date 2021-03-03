@@ -115,7 +115,7 @@ class RPCTestCase(unittest.TestCase):
     def test_errors(self):
         """ Verify that the server handles errors from RPC methods. """
         log_capture = CapturingHandler()
-        logger = logging.getLogger("rpc.methods")
+        logger = logging.getLogger("dragonfly.rpc.methods")
         logger.addHandler(log_capture)
 
         # Add a new RPC method and check if an error is logged and received.
@@ -136,7 +136,7 @@ class RPCTestCase(unittest.TestCase):
     def test_security_tokens(self):
         """ Verify that security tokens must match for RPC execution to occur.
         """
-        logger = logging.getLogger("rpc.methods")
+        logger = logging.getLogger("dragonfly.rpc.methods")
 
         # Add an RPC method for testing.
         def security_check():

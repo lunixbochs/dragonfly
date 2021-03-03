@@ -36,6 +36,7 @@ class TalonEngine(EngineBase):
 
     _name = "talon"
     DictationContainer = DictationContainerBase
+    _log = logging.getLogger("dragonfly.engine.talon")
 
     def __init__(self):
         super().__init__()
@@ -160,7 +161,7 @@ class TalonEngine(EngineBase):
 
 class GrammarWrapper(GrammarWrapperBase):
 
-    _log = logging.getLogger("engine")
+    _log = logging.getLogger("dragonfly.engine")
 
     def process_begin(self, executable, title, handle):
         self.grammar.process_begin(executable, title, handle)

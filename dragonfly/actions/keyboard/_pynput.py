@@ -35,7 +35,7 @@ from ._base import BaseKeyboard, Typeable as BaseTypeable
 
 class Typeable(BaseTypeable):
     """ Typeable class for pynput. """
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
 
     def __init__(self, code, modifiers=(), name=None, is_text=False):
         BaseTypeable.__init__(self, code, modifiers, name, is_text)
@@ -230,7 +230,7 @@ class Keyboard(BaseKeyboard):
     """Static class wrapper around pynput.keyboard."""
 
     _controller = Controller()
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
 
     @classmethod
     def send_keyboard_events(cls, events):

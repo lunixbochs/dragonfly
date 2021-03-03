@@ -278,7 +278,7 @@ class TextInputEngine(EngineBase):
 
 class GrammarWrapper(GrammarWrapperBase):
 
-    _log = logging.getLogger("engine")
+    _log = logging.getLogger("dragonfly.engine")
 
     def __init__(self, grammar, engine, recobs_manager):
         GrammarWrapperBase.__init__(self, grammar, engine, recobs_manager)

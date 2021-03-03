@@ -58,10 +58,10 @@ class Grammar(object):
     """
 
     # pylint: disable=too-many-instance-attributes
-    _log_load     = logging.getLogger("grammar.load")
-    _log_begin    = logging.getLogger("grammar.begin")
-    _log_results  = logging.getLogger("grammar.results")
-    _log          = logging.getLogger("grammar")
+    _log_load     = logging.getLogger("dragonfly.grammar.load")
+    _log_begin    = logging.getLogger("dragonfly.grammar.begin")
+    _log_results  = logging.getLogger("dragonfly.grammar.results")
+    _log          = logging.getLogger("dragonfly.grammar")
 
     # ----------------------------------------------------------------------
     # Methods for initialization and cleanup.

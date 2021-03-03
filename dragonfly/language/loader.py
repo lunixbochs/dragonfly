@@ -44,7 +44,7 @@ from ..error                   import DragonflyError
 
 class LanguageSpecificLoader(object):
 
-    _log = logging.getLogger("lang")
+    _log = logging.getLogger("dragonfly.lang")
 
 
     #-----------------------------------------------------------------------

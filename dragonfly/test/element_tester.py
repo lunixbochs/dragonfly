@@ -36,7 +36,7 @@ from ..test.infrastructure  import Unique
 
 class ElementTester(Grammar):
 
-    _log = logging.getLogger("test.element")
+    _log = logging.getLogger("dragonfly.test.element")
     _NotSet = Unique("NoRecognition")
 
     class _ElementTestRule(Rule):

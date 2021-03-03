@@ -205,7 +205,7 @@ class Word(object):
 class WordParserBase(object):
     """ Base class for parsing dictation results into Word objects. """
 
-    _log = logging.getLogger("dictation.word_parser")
+    _log = logging.getLogger("dragonfly.dictation.word_parser")
 
     def parse_input(self, input):
         raise NotImplementedError
@@ -431,7 +431,7 @@ class WordParserFactory(object):
 
     """
 
-    _log = logging.getLogger("dictation.word_parser_factory")
+    _log = logging.getLogger("dragonfly.dictation.word_parser_factory")
 
     # The following dictionary determines which words are used for which
     # language to detect whether natlink.getWordInfo() returns useful info.
@@ -475,7 +475,7 @@ class WordParserFactory(object):
 
 class WordFormatter(object):
 
-    _log = logging.getLogger("dictation.formatter")
+    _log = logging.getLogger("dragonfly.dictation.formatter")
 
     parser_factory = WordParserFactory()
 

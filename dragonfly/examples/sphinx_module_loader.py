@@ -47,7 +47,7 @@ def main():
 
     # Try to import the local engine configuration object first. If there isn't one,
     # use the default engine configuration.
-    log = logging.getLogger("config")
+    log = logging.getLogger("dragonfly.config")
     try:
         import config
         engine.config = config

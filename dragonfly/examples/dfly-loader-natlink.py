@@ -49,7 +49,7 @@ from dragonfly.log import setup_log
 # Set up basic logging.
 
 setup_log()
-# logging.getLogger("compound.parse").setLevel(logging.INFO)
+# logging.getLogger("dragonfly.compound.parse").setLevel(logging.INFO)
 
 
 #---------------------------------------------------------------------------

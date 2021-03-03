@@ -89,34 +89,34 @@ class LogTestCase(unittest.TestCase):
     def test_filtering(self):
         """ Verify that log messages are filtered according to level. """
         log.setup_log()
-        logger = logging.getLogger("grammar")
+        logger = logging.getLogger("dragonfly.grammar")
         logger.debug("test_filtering - debug")
         logger.info("test_filtering - info")
         logger.warning("test_filtering - warning")
         logger.error("test_filtering - error")
-        expected = ["grammar (WARNING): test_filtering - warning",
-                    "grammar (ERROR): test_filtering - error"]
+        expected = ["dragonfly.grammar (WARNING): test_filtering - warning",
+                    "dragonfly.grammar (ERROR): test_filtering - error"]
         self.assertEqual(self._error.lines, expected)
 
         self._error.clear()
-        logger = logging.getLogger("grammar.begin")
+        logger = logging.getLogger("dragonfly.grammar.begin")
         logger.debug("test_filtering - debug")
         logger.info("test_filtering - info")
         logger.warning("test_filtering - warning")
         logger.error("test_filtering - error")
-        expected = ["grammar.begin (INFO): test_filtering - info",
-                    "grammar.begin (WARNING): test_filtering - warning",
-                    "grammar.begin (ERROR): test_filtering - error"]
+        expected = ["dragonfly.grammar.begin (INFO): test_filtering - info",
+                    "dragonfly.grammar.begin (WARNING): test_filtering - warning",
+                    "dragonfly.grammar.begin (ERROR): test_filtering - error"]
         self.assertEqual(self._error.lines, expected)
 
         self._error.clear()
-        logger = logging.getLogger("grammar.load")
+        logger = logging.getLogger("dragonfly.grammar.load")
         logger.debug("test_filtering - debug")
         logger.info("test_filtering - info")
         logger.warning("test_filtering - warning")
         logger.error("test_filtering - error")
-        expected = ["grammar.load (WARNING): test_filtering - warning",
-                    "grammar.load (ERROR): test_filtering - error"]
+        expected = ["dragonfly.grammar.load (WARNING): test_filtering - warning",
+                    "dragonfly.grammar.load (ERROR): test_filtering - error"]
         self.assertEqual(self._error.lines, expected)
 
     def _new_lines(self):

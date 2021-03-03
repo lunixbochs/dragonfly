@@ -90,7 +90,7 @@ class Compound(Alternative):
 
     """
 
-    _log = logging.getLogger("compound.parse")
+    _log = logging.getLogger("dragonfly.compound.parse")
     _parser = spec_parser
 
     def __init__(self, spec, extras=None, actions=None, name=None,

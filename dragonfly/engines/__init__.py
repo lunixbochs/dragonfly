@@ -49,7 +49,7 @@ def get_engine(name=None, **kwargs):
         :raises: EngineError
     """
     global _default_engine, _engines_by_name
-    log = logging.getLogger("engine")
+    log = logging.getLogger("dragonfly.engine")
 
     if name and name in _engines_by_name:
         # If the requested engine has already been loaded, return it.

@@ -49,7 +49,7 @@ class DarwinWindow(BaseWindow):
 
     """
 
-    _log = logging.getLogger("window")
+    _log = logging.getLogger("dragonfly.window")
 
     #-----------------------------------------------------------------------
     # Class methods to create new Window objects.

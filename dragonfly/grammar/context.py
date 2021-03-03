@@ -115,7 +115,7 @@ class Context(object):
 
     """
 
-    _log = logging.getLogger("context.match")
+    _log = logging.getLogger("dragonfly.context.match")
     _log_match = _log
 
     # ----------------------------------------------------------------------

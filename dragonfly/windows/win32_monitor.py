@@ -37,7 +37,7 @@ from .rectangle import Rectangle
 # manifest). When running from the command line, however, the default is
 # PROCESS_DPI_UNAWARE and can be adjusted here.
 try:
-    log = logging.getLogger("monitor.init")
+    log = logging.getLogger("dragonfly.monitor.init")
     value = 2  # PROCESS_PER_MONITOR_DPI_AWARE
     hresult = ctypes.windll.shcore.SetProcessDpiAwareness(value)
     if hresult == -2147024809:  # E_INVALIDARG

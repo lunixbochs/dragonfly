@@ -38,7 +38,7 @@ class _Timer(object):
 
     """
 
-    _log = logging.getLogger("timer")
+    _log = logging.getLogger("dragonfly.timer")
 
     class Callback(object):
         def __init__(self, function, interval):

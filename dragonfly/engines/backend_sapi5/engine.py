@@ -70,7 +70,7 @@ class MSG(Structure):
 
 
 class MimicObserver(RecognitionObserver):
-    _log = logging.getLogger("SAPI5 RecObs")
+    _log = logging.getLogger("dragonfly.sapi5.recobs")
 
     def __init__(self):
         RecognitionObserver.__init__(self)

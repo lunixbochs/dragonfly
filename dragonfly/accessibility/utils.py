@@ -11,7 +11,7 @@ import enum
 import logging
 
 
-_log = logging.getLogger("accessibility")
+_log = logging.getLogger("dragonfly.accessibility")
 
 
 class CursorPosition(enum.Enum):

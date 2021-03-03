@@ -36,7 +36,7 @@ from ..base import GrammarWrapperBase
 
 class GrammarWrapper(GrammarWrapperBase):
 
-    _log = logging.getLogger("engine")
+    _log = logging.getLogger("dragonfly.engine")
 
     def __init__(self, grammar, engine, recobs_manager, search_name):
         """
@@ -90,7 +90,7 @@ class GrammarWrapper(GrammarWrapperBase):
 
             # Log a warning about unknown words if necessary.
             if unknown_words:
-                logger = logging.getLogger("engine.compiler")
+                logger = logging.getLogger("dragonfly.engine.compiler")
                 logger.warning("List '%s' used words not found in the "
                                "pronunciation dictionary: %s", name,
                                ", ".join(sorted(unknown_words)))

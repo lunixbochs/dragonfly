@@ -30,7 +30,7 @@ from ._x11_base import BaseX11Keyboard, KEY_TRANSLATION
 class LibxdoKeyboard(BaseX11Keyboard):
     """Static class for typing keys with python-libxdo."""
 
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
     display = Xlib.display.Display()
     libxdo = xdo.Xdo(os.environ.get('DISPLAY', ''))
 

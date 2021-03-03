@@ -145,7 +145,7 @@ class Config(object):
   """
 
     _configs_by_name = {}
-    _log = logging.getLogger("config")
+    _log = logging.getLogger("dragonfly.config")
 
 
     #-----------------------------------------------------------------------

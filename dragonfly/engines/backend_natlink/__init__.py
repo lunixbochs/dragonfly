@@ -30,7 +30,7 @@ import platform
 import struct
 import sys
 
-_log = logging.getLogger("engine.natlink")
+_log = logging.getLogger("dragonfly.engine.natlink")
 
 
 #---------------------------------------------------------------------------

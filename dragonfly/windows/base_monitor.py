@@ -33,7 +33,7 @@ class BaseMonitor(object):
     The base monitor class.
     """
 
-    _log = logging.getLogger("monitor.init")
+    _log = logging.getLogger("dragonfly.monitor.init")
 
     #-----------------------------------------------------------------------
     # Class attributes to retrieve existing Monitor objects.

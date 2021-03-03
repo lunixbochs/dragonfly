@@ -33,9 +33,9 @@ from dragonfly.log import setup_log
 if False:
     # Debugging logging for reporting trouble
     logging.basicConfig(level=10)
-    logging.getLogger('grammar.decode').setLevel(20)
-    logging.getLogger('grammar.begin').setLevel(20)
-    logging.getLogger('compound').setLevel(20)
+    logging.getLogger('dragonfly.grammar.decode').setLevel(20)
+    logging.getLogger('dragonfly.grammar.begin').setLevel(20)
+    logging.getLogger('dragonfly.compound').setLevel(20)
     logging.getLogger('kaldi.compiler').setLevel(10)
 else:
     setup_log()

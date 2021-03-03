@@ -72,7 +72,7 @@ class PermissionDeniedError(Exception):
     """
 
 
-_log = logging.getLogger("rpc.methods")
+_log = logging.getLogger("dragonfly.rpc.methods")
 
 # --------------------------------------------------------------------------
 # RPC method decorator used by the server internally.
@@ -217,7 +217,7 @@ class RPCServer(object):
 
     """
 
-    _log = logging.getLogger("rpc.server")
+    _log = logging.getLogger("dragonfly.rpc.server")
 
     def __init__(self, address="127.0.0.1", port=50051, ssl_context=None,
                  threaded=True, security_token=None):

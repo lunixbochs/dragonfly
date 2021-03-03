@@ -27,7 +27,7 @@ SR back-end package for WSR and SAPI 5
 import logging
 import platform
 
-_log = logging.getLogger("engine.sapi5")
+_log = logging.getLogger("dragonfly.engine.sapi5")
 
 
 #---------------------------------------------------------------------------

@@ -27,7 +27,7 @@ from ._x11_base import BaseX11Keyboard, KEY_TRANSLATION
 class XdotoolKeyboard(BaseX11Keyboard):
     """Static class for typing keys with xdotool."""
 
-    _log = logging.getLogger("keyboard")
+    _log = logging.getLogger("dragonfly.keyboard")
 
     # xdotool command
     xdotool = "xdotool"

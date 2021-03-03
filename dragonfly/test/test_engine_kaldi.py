@@ -73,7 +73,7 @@ class KaldiEngineTests(unittest.TestCase):
 
     #     # Catch log messages.
     #     handler = MockLoggingHandler()
-    #     log = logging.getLogger("engine.compiler")
+    #     log = logging.getLogger("dragonfly.engine.compiler")
     #     log.addHandler(handler)
     #     grammar.load()
     #     log.removeHandler(handler)
